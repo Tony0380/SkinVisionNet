@@ -18,6 +18,10 @@ SkinVisionNet: Deep Learning Techniques for Accurate Skin Lesion Classification
 
 #### Normalizzazione
 
+Standard ImageNet, perfetta per modelli pre-addestrati
+
+### Sbilanciamento
+
 | Tecnica                | Serve per...                              | Quando usarla                        |
 |------------------------|-------------------------------------------|--------------------------------------|
 | **Data Augmentation**  | Aumentare la varietà e robustezza         | Sempre, su dataset piccoli/medi     |
