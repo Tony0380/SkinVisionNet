@@ -55,7 +55,7 @@ Standard ImageNet, perfetta per modelli pre-addestrati
 
 ## Algoritmi di Deep Learning
 
-Fine tuning su [Swin Transformer](https://github.com/microsoft/Swin-Transformer) piuttosto che ViT-base-patch16
+Fine tuning su [Swin Transformer](https://github.com/microsoft/Swin-Transformer) piuttosto che [ViT-base-patch16](https://hiya31.medium.com/vision-transformer-vs-swin-transformer-a-conceptual-comparison-6502d9b949f2)
 
 ### Perché Swin Transformer?
 
