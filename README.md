@@ -14,6 +14,14 @@ A completamento del lavoro, il progetto prevede la valutazione delle prestazioni
 
 Di seguito, la descrizione dettagliata del progetto, delle tecnologie scelte e delle motivazioni che guidano la nostra proposta.
 
+## Obiettivi del progetto
+
+- Sviluppare un classificatore automatico in grado di distinguere tra **melanoma**, **nevus** e **cheratosi seborroica** su immagini dermatoscopiche.
+- Adottare tecniche avanzate di **fine-tuning** su modelli pre-addestrati con architetture transformer.
+- Mitigare lo sbilanciamento tra classi attraverso l'uso combinato di *data augmentation*, *weighted sampler* e *focal loss*.
+- Valutare le prestazioni mediante metriche robuste (accuracy, F1, recall, AUC).
+- Esplorare possibili estensioni future verso explainability e integrazione clinica.
+
 ## Dataset
 
 ### Struttura Dataset
@@ -72,6 +80,13 @@ Fine tuning su [Swin Transformer](https://github.com/microsoft/Swin-Transformer)
 | 🔬 **Compito visivo complesso**     | Sì, serve riconoscere dettagli           |
 | 🧠 **Necessità di contesto globale**| Sì, pattern e bordi nei/lesioni          |
 | ⚙️ **Potenza computazionale richiesta** | Media-alta                             |
+
+## Sviluppi futuri
+
+- Integrazione di tecniche di **explainability** (Grad-CAM, LIME) per rendere interpretabile la decisione del modello.
+- Estensione a classificazione multi-label o segmentazione delle lesioni.
+- Validazione clinica con esperti dermatologi su nuovi set di immagini reali.
+- Realizzazione di una **web app prototipale** o un'interfaccia mobile di supporto alla diagnosi.
 
 ## Studenti
 
