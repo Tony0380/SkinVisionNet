@@ -25,17 +25,17 @@ SkinVisionNet: Deep Learning Techniques for Accurate Skin Lesion Classification
 
 ## Deep Learning
 
-Fine tuning su Swim Transformer
+Fine tuning su [Swim Transformer](https://github.com/microsoft/Swin-Transformer)
 
 ### Perché Swim Transformer?
 
-| Caratteristica                      | Swim Transformer                                            |
-| ----------------------------------- | ----------------------------------------------------------- |
-| Tipo di Patch                       | Gerarchico, con finestra scorrevole                         |
-| Gestione della scala                | Ottima                                                      |
-| Prestazioni su immagini mediche     | Spesso migliori, più dettagli visivi                       |
-| Efficienza computazionale           | Maggiore di ViT-base-patch16                                |
-| Generalizzazione su piccoli dataset | Spesso superiore (utilizzato perlopiù con dataset piccoli) |
+| Caratteristica                      | Swim Transformer                                                                         |
+| ----------------------------------- | ---------------------------------------------------------------------------------------- |
+| Tipo di Patch                       | Gerarchico, con finestra scorrevole                                                      |
+| Gestione della scala                | Ottima                                                                                   |
+| Prestazioni su immagini mediche     | Spesso migliori, più dettagli visivi rispetto a ViT-base-patch16                       |
+| Efficienza computazionale           | Maggiore di ViT-base-patch16                                                             |
+| Generalizzazione su piccoli dataset | Spesso superiore (utilizzato perlopiù con dataset piccoli) rispetto a ViT-base-patch16 |
 
 ## Studenti
 
