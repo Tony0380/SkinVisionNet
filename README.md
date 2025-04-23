@@ -1,6 +1,12 @@
-# SkinVisionNet
+# SkinVisionNet: Deep Learning Techniques for Accurate Skin Lesion Classification
 
-SkinVisionNet: Deep Learning Techniques for Accurate Skin Lesion Classification
+La diagnosi precoce del melanoma è fondamentale per migliorare le possibilità di sopravvivenza, ma distinguere tra melanoma, nevo benigno e cheratosi seborroica rimane una sfida clinica significativa. In questo progetto, proponiamo SkinVisionNet, un sistema di classificazione automatica delle lesioni cutanee basato su tecniche di deep learning e fine-tuning di modelli all’avanguardia.
+
+Abbiamo utilizzato il dataset Skin Lesion Analysis Toward Melanoma Detection con oltre 2600 immagini suddivise in tre classi clinicamente rilevanti. Per migliorare le prestazioni su un dataset moderatamente bilanciato, abbiamo adottato strategie avanzate come data augmentation, weighted sampling e focal loss, mitigando l’impatto dello sbilanciamento delle classi.
+
+Il cuore del sistema è rappresentato da un Swin Transformer, scelto per la sua architettura gerarchica e la capacità di catturare efficacemente dettagli sia locali che globali nelle immagini mediche. Il modello è stato fine-tunato partendo da pesi pre-addestrati su ImageNet, con una normalizzazione coerente agli standard ImageNet per garantire compatibilità.
+
+I risultati mostrano che Swin Transformer, unito a un attento preprocessing e a tecniche di training mirate, rappresenta una soluzione altamente promettente per la classificazione delle lesioni cutanee. Il progetto pone le basi per futuri sviluppi nell’ambito della diagnosi assistita in dermatologia.
 
 ## Dataset
 
