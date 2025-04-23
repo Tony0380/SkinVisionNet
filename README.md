@@ -1,12 +1,18 @@
 # SkinVisionNet: Deep Learning Techniques for Accurate Skin Lesion Classification
 
-La diagnosi precoce del melanoma è fondamentale per migliorare le possibilità di sopravvivenza, ma distinguere tra melanoma, nevo benigno e cheratosi seborroica rimane una sfida clinica significativa. In questo progetto, proponiamo SkinVisionNet, un sistema di classificazione automatica delle lesioni cutanee basato su tecniche di deep learning e fine-tuning di modelli all’avanguardia.
+## Introduzione
 
-Abbiamo utilizzato il dataset Skin Lesion Analysis Toward Melanoma Detection con oltre 2600 immagini suddivise in tre classi clinicamente rilevanti. Per migliorare le prestazioni su un dataset moderatamente bilanciato, abbiamo adottato strategie avanzate come data augmentation, weighted sampling e focal loss, mitigando l’impatto dello sbilanciamento delle classi.
+Negli ultimi anni, la diagnosi assistita da intelligenza artificiale ha mostrato un enorme potenziale in ambito medico, in particolare nella dermatologia digitale. La classificazione automatica delle lesioni cutanee rappresenta una sfida cruciale per la prevenzione e la diagnosi precoce di malattie gravi come il melanoma, che, se individuato tempestivamente, può essere trattato con successo. Tuttavia, distinguere tra melanoma, nevi benigni e cheratosi seborroica richiede un'analisi accurata di dettagli visivi sottili, spesso non immediatamente riconoscibili.
 
-Il cuore del sistema è rappresentato da un Swin Transformer, scelto per la sua architettura gerarchica e la capacità di catturare efficacemente dettagli sia locali che globali nelle immagini mediche. Il modello è stato fine-tunato partendo da pesi pre-addestrati su ImageNet, con una normalizzazione coerente agli standard ImageNet per garantire compatibilità.
+Da questa esigenza nasce l’idea progettuale di **SkinVisionNet**, un sistema intelligente di supporto alla diagnosi dermatologica basato su tecniche di deep learning di ultima generazione. L'obiettivo è quello di realizzare un classificatore di immagini dermatoscopiche in grado di distinguere in modo affidabile tra le principali tipologie di lesioni cutanee, con un'architettura efficiente e scalabile.
 
-I risultati mostrano che Swin Transformer, unito a un attento preprocessing e a tecniche di training mirate, rappresenta una soluzione altamente promettente per la classificazione delle lesioni cutanee. Il progetto pone le basi per futuri sviluppi nell’ambito della diagnosi assistita in dermatologia.
+Il cuore del sistema sarà costituito dal **Swin Transformer**, un modello particolarmente adatto per analizzare immagini ad alta risoluzione e con struttura visiva complessa. Grazie alla sua architettura gerarchica e all’uso di finestre scorrevoli (shifted windows), il modello riesce a catturare sia pattern locali (come la struttura dei bordi o le variazioni di pigmentazione) sia pattern globali (come la simmetria e la distribuzione del colore), risultando particolarmente efficace in ambito medico.
+
+Per allenare il modello sarà utilizzato il dataset pubblico [Skin Lesion Analysis Toward Melanoma Detection](https://www.kaggle.com/datasets/wanderdust/skin-lesion-analysis-toward-melanoma-detection), che fornisce immagini classificate in tre classi clinicamente rilevanti. Considerata la presenza di uno sbilanciamento tra le classi, verranno adottate tecniche specifiche di gestione dello squilibrio come il *weighted sampling* e la *focal loss*. Inoltre, il sistema sarà potenziato con strategie di *data augmentation* per aumentare la robustezza e la capacità di generalizzazione del modello.
+
+A completamento del lavoro, il progetto prevede la valutazione delle prestazioni del sistema mediante metriche appropriate (accuracy, recall, F1-score, AUC) e l’eventuale integrazione di tecniche di explainability per rendere il modello interpretabile anche in contesti clinici.
+
+Di seguito, la descrizione dettagliata del progetto, delle tecnologie scelte e delle motivazioni che guidano la nostra proposta.
 
 ## Dataset
 
