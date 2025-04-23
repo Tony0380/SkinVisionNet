@@ -67,7 +67,6 @@ Fine tuning su [Swin Transformer](https://github.com/microsoft/Swin-Transformer)
 | **Prestazioni su immagini mediche**  | Molto buone                                      | Spesso superiori nei task con dettagli fini         |
 | **Efficienza computazionale**         | Buona, ma meno efficiente                        | Più efficiente a parità di prestazioni              |
 | **Robustezza su piccoli dataset**     | Discreta, con buon fine-tuning                   | Alta, migliore generalizzazione                     |
-| **Supporto e documentazione**         | Ampio (HuggingFace, PyTorch, torchvision, ecc.)  | In crescita, ottimo supporto su mmseg e timm        |
 | **Facilità d'uso per inizio progetto**| Semplice e veloce da usare                       | Richiede più configurazione                         |
 | **Ideale per...**                     | Progetti con risorse limitate o dataset medi     | Classificazione con immagini complesse o dettagliate|
 
