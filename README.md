@@ -40,7 +40,7 @@ Di seguito, la descrizione dettagliata del progetto, delle tecnologie scelte e d
 
 Standard ImageNet, perfetta per modelli pre-addestrati
 
-### Sbilanciamento
+### Tecniche per mitigare lo sbilanciamento
 
 | Tecnica                | Serve per...                              | Quando usarla                        |
 |------------------------|-------------------------------------------|--------------------------------------|
