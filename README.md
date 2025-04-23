@@ -74,11 +74,11 @@ Fine tuning su [Swin Transformer](https://github.com/microsoft/Swin-Transformer)
 
 | Fattore                             | Considerazione                           |
 |------------------------------------|------------------------------------------|
-| 🔢 **Numero totale immagini**       | ~2660 immagini: ✅ OK                     |
-| ⚖️ **Sbilanciamento**               | Presente (ma gestibile)                  |
-| 🔬 **Compito visivo complesso**     | Sì, serve riconoscere dettagli           |
-| 🧠 **Necessità di contesto globale**| Sì, pattern e bordi nei/lesioni          |
-| ⚙️ **Potenza computazionale richiesta** | Media-alta                             |
+|  **Numero totale immagini**       | ~2660 immagini:  OK                     |
+|  **Sbilanciamento**               | Presente (ma gestibile)                  |
+|  **Compito visivo complesso**     | Sì, serve riconoscere dettagli           |
+|  **Necessità di contesto globale**| Sì, pattern e bordi nei/lesioni          |
+|  **Potenza computazionale richiesta** | Media-alta                             |
 
 ## Sviluppi futuri
 
