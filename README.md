@@ -89,6 +89,6 @@ Fine tuning su [Swin Transformer](https://github.com/microsoft/Swin-Transformer)
 
 ## Studenti
 
-[Antonio Colamartino](https://github.com/Tony0380) | a.colamartino6@studenti.uniba.it
+[Antonio Colamartino](https://www.antoniocolamartino.it) | a.colamartino6@studenti.uniba.it
 
 [Claudio De Candia](https://github.com/ClaudideCandia) | c.decandia15@studenti.uniba.it
