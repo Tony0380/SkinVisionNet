@@ -1,10 +1,10 @@
-# SkinVisionNet: Deep Learning Techniques for Accurate Skin Lesion Classification
+# SkinVisionNet: Deep Learning Techniques for Accurate Pigmented Skin Lesion Classification
 
 ## Introduzione
 
-Negli ultimi anni, la diagnosi assistita da intelligenza artificiale ha mostrato un enorme potenziale in ambito medico, in particolare nella dermatologia digitale. La classificazione automatica delle lesioni cutanee rappresenta una sfida cruciale per la prevenzione e la diagnosi precoce di malattie gravi come il melanoma, che, se individuato tempestivamente, può essere trattato con successo. Tuttavia, distinguere tra melanoma, nevi benigni e cheratosi seborroica richiede un'analisi accurata di dettagli visivi sottili, spesso non immediatamente riconoscibili.
+Negli ultimi anni, la diagnosi assistita da intelligenza artificiale ha mostrato un enorme potenziale in ambito medico, in particolare nella dermatologia digitale. La classificazione automatica delle lesioni cutanee pigmentate rappresenta una sfida cruciale per la prevenzione e la diagnosi precoce di malattie gravi come il melanoma, che, se individuato tempestivamente, può essere trattato con successo. Tuttavia, distinguere tra melanoma, nei benigni e cheratosi seborroica richiede un'analisi accurata di dettagli visivi sottili, spesso non immediatamente riconoscibili.
 
-Da questa esigenza nasce l’idea progettuale di **SkinVisionNet**, un sistema intelligente di supporto alla diagnosi dermatologica basato su tecniche di deep learning di ultima generazione. L'obiettivo è quello di realizzare un classificatore di immagini dermatoscopiche in grado di distinguere in modo affidabile tra le principali tipologie di lesioni cutanee, con un'architettura efficiente e scalabile.
+Da questa esigenza nasce l’idea progettuale di **SkinVisionNet**, un sistema intelligente di supporto alla diagnosi dermatologica basato su tecniche di deep learning di ultima generazione. L'obiettivo è quello di realizzare un classificatore di immagini dermatoscopiche in grado di distinguere in modo affidabile tra le principali tipologie di lesioni cutanee pigmentate, con un'architettura efficiente e scalabile.
 
 Il cuore del sistema sarà costituito dal **Swin Transformer**, un modello particolarmente adatto per analizzare immagini ad alta risoluzione e con struttura visiva complessa. Grazie alla sua architettura gerarchica e all’uso di finestre scorrevoli (shifted windows), il modello riesce a catturare sia pattern locali (come la struttura dei bordi o le variazioni di pigmentazione) sia pattern globali (come la simmetria e la distribuzione del colore), risultando particolarmente efficace in ambito medico.
 
@@ -42,11 +42,11 @@ Standard ImageNet, perfetta per modelli pre-addestrati
 
 ### Tecniche per mitigare lo sbilanciamento
 
-| Tecnica                | Serve per...                              | Quando usarla                        |
-|------------------------|-------------------------------------------|--------------------------------------|
-| **Data Augmentation**  | Aumentare la varietà e robustezza         | Sempre, su dataset piccoli/medi     |
-| **Weighted Sampler**   | Bilanciare il numero di esempi per classe | Quando il dataset è sbilanciato     |
-| **Focal Loss**         | Penalizzare di più gli errori gravi       | Quando il modello ignora classi minori |
+| Tecnica                     | Serve per...                              | Quando usarla                          |
+| --------------------------- | ----------------------------------------- | -------------------------------------- |
+| **Data Augmentation** | Aumentare la varietà e robustezza        | Sempre, su dataset piccoli/medi        |
+| **Weighted Sampler**  | Bilanciare il numero di esempi per classe | Quando il dataset è sbilanciato       |
+| **Focal Loss**        | Penalizzare di più gli errori gravi      | Quando il modello ignora classi minori |
 
 #### Link utili
 
@@ -59,26 +59,26 @@ Fine tuning su [Swin Transformer](https://github.com/microsoft/Swin-Transformer)
 
 ### Perché Swin Transformer?
 
-| Caratteristica                         | ViT-base-patch16-224                            | Swin Transformer                                     |
-|---------------------------------------|--------------------------------------------------|------------------------------------------------------|
-| **Tipo di patch**                     | Patch fisse 16x16                                | Finestra scorrevole (shifted windows)               |
-| **Architettura**                      | Transformer standard                             | Gerarchica (multi-scala)                            |
-| **Gestione della scala**              | Limitata (non gerarchica)                        | Ottima per immagini con dettagli locali             |
-| **Prestazioni su immagini mediche**  | Molto buone                                      | Spesso superiori nei task con dettagli fini         |
-| **Efficienza computazionale**         | Buona, ma meno efficiente                        | Più efficiente a parità di prestazioni              |
-| **Robustezza su piccoli dataset**     | Discreta, con buon fine-tuning                   | Alta, migliore generalizzazione                     |
-| **Facilità d'uso per inizio progetto**| Semplice e veloce da usare                       | Richiede più configurazione                         |
-| **Ideale per...**                     | Progetti con risorse limitate o dataset medi     | Classificazione con immagini complesse o dettagliate|
+| Caratteristica                                | ViT-base-patch16-224                         | Swin Transformer                                     |
+| --------------------------------------------- | -------------------------------------------- | ---------------------------------------------------- |
+| **Tipo di patch**                       | Patch fisse 16x16                            | Finestra scorrevole (shifted windows)                |
+| **Architettura**                        | Transformer standard                         | Gerarchica (multi-scala)                             |
+| **Gestione della scala**                | Limitata (non gerarchica)                    | Ottima per immagini con dettagli locali              |
+| **Prestazioni su immagini mediche**     | Molto buone                                  | Spesso superiori nei task con dettagli fini          |
+| **Efficienza computazionale**           | Buona, ma meno efficiente                    | Più efficiente a parità di prestazioni             |
+| **Robustezza su piccoli dataset**       | Discreta, con buon fine-tuning               | Alta, migliore generalizzazione                      |
+| **Facilità d'uso per inizio progetto** | Semplice e veloce da usare                   | Richiede più configurazione                         |
+| **Ideale per...**                       | Progetti con risorse limitate o dataset medi | Classificazione con immagini complesse o dettagliate |
 
 ### In sintesi
 
-| Fattore                             | Considerazione                           |
-|------------------------------------|------------------------------------------|
-|  **Numero totale immagini**       | ~2660 immagini:  OK                     |
-|  **Sbilanciamento**               | Presente (ma gestibile)                  |
-|  **Compito visivo complesso**     | Sì, serve riconoscere dettagli           |
-|  **Necessità di contesto globale**| Sì, pattern e bordi nei/lesioni          |
-|  **Potenza computazionale richiesta** | Media-alta                             |
+| Fattore                                        | Considerazione                   |
+| ---------------------------------------------- | -------------------------------- |
+| 🔢**Numero totale immagini**             | ~2660 immagini: ✅ OK            |
+| ⚖️**Sbilanciamento**                   | Presente (ma gestibile)          |
+| 🔬**Compito visivo complesso**           | Sì, serve riconoscere dettagli  |
+| 🧠**Necessità di contesto globale**     | Sì, pattern e bordi nei/lesioni |
+| ⚙️**Potenza computazionale richiesta** | Media-alta                       |
 
 ## Sviluppi futuri
 
@@ -89,6 +89,6 @@ Fine tuning su [Swin Transformer](https://github.com/microsoft/Swin-Transformer)
 
 ## Studenti
 
-[Antonio Colamartino](https://www.antoniocolamartino.it) | a.colamartino6@studenti.uniba.it
+[Antonio Colamartino](https://antoniocolamartino.it) | a.colamartino6@studenti.uniba.it
 
 [Claudio De Candia](https://github.com/ClaudideCandia) | c.decandia15@studenti.uniba.it
